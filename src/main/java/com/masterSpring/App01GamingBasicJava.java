@@ -6,11 +6,11 @@ public class App01GamingBasicJava {
 
     public static void main(String[] args) {
 
-        var game= new MarioGame();
-        var game1= new SuperContraGame();
-        var game2= new PacManGame();
+        GamingConsole game= new MarioGame();
+        GamingConsole game1= new SuperContraGame();
+        GamingConsole game2= new PacManGame();
 
-        var gameRunner= new GameRunner(game);
+        GameRunner gameRunner= new GameRunner(game);
         //game is a Dependency of GameRunner --> Dependency's Injection
         gameRunner.run();
 

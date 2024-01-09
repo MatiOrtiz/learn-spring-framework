@@ -1,7 +1,6 @@
-package com.masterSpring;
+package com.masterSpring.helloWorld;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.w3c.dom.ls.LSOutput;
 
 public class App02HelloWorldSpring {
 
@@ -18,6 +17,7 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("name"));
         System.out.println(context.getBean("age"));
         System.out.println(context.getBean("address"));
+        System.out.println(context.getBean("person"));
 
     }
 

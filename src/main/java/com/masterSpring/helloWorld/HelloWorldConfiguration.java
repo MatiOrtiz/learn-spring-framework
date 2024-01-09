@@ -1,8 +1,8 @@
-package com.masterSpring;
+package com.masterSpring.helloWorld;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-record Person (String name, int age){};
+record Person (String name, int age, Address address){};
 record Address (String firstLine, String city){};
 
 @Configuration
@@ -20,17 +20,17 @@ public class HelloWorldConfiguration {
 
     @Bean
     public String firstLine(){
-        return "";
+        return "Bedford st";
     }
 
     @Bean
     public String city(){
-        return "Punta Alta";
+        return "New York";
     }
 
     @Bean
     public Person person(){
-        return new Person(name(),age());
+        return new Person(name(),age(), address());
     }
 
     @Bean
